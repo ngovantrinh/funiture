@@ -1,0 +1,110 @@
+.arrivals {
+  background-color: #f3f3ed;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-family: 'Zilla Slab', serif;
+    padding: 30px 15px 60px 15px;
+    > h1 {
+      text-transform: capitalize;
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+    > p {
+      line-height: 26px;
+      font-size: 17px;
+      color: #919191;
+      padding-bottom: 25px;
+    }
+    .btn {
+      font-size: 14px;
+      line-height: 20px;
+      border: 1px solid #444;
+      text-transform: capitalize;
+      border-radius: initial;
+      padding: 4px 22px;
+      margin: 4px;
+      > svg {
+        margin-right: 5px;
+      }
+    }
+    .btn:hover {
+      background-color: #193532;
+      color: white;
+    }
+  }
+  .grid-inner {
+    font-family: 'Zilla Slab', serif;
+    .grid-image {
+      position: relative;
+      width: 100%;
+      .show-img {
+        width: 100%;
+        > img {
+          width: 100%;
+        }
+      }
+      .hover-img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.4s;
+        > img {
+          width: 100%;
+        }
+        .btn-left {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: white;
+          padding: 10px 13px;
+          margin: 10px;
+          border-radius: 5px;
+          font-size: 14px;
+          color: rgb(128, 128, 128);
+          text-decoration: none;
+        }
+        .btn-right {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          padding: 10px 14px;
+          margin: 10px;
+          border-radius: 5px;
+          font-size: 15px;
+          background-color: white;
+          color: rgb(128, 128, 128);
+          text-decoration: none;
+        }
+      }
+      .hover-img:hover {
+        opacity: 1;
+      }
+    }
+    .grid-title {
+      padding: 15px 0;
+      .product-name {
+        color: #193532;
+        font-size: 18px;
+      }
+      .price {
+        font-size: 18px;
+        color: #444;
+        font-weight: 400;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+@include breakpoint(767) {
+  .arrivals {
+    .container {
+      padding: 0;
+    }
+  }
+}

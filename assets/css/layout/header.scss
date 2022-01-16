@@ -1,0 +1,145 @@
+.header {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    &__left {
+      .list-item {
+        display: flex;
+        position: relative;
+        .item {
+          text-transform: uppercase;
+          font-size: 13px;
+          > a {
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+            > div {
+              padding: 22px 20px;
+            }
+          }
+          .drop-menu {
+            position: absolute;
+            top: 94%;
+            left: 0;
+            z-index: 999;
+          }
+        }
+      }
+      .button-menu {
+        display: none;
+      }
+    }
+    &__logo {
+      margin-right: 190px;
+      .logo-tap {
+        .logo-img {
+          height: 60.9px;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      .find {
+        font-size: 15px;
+        padding: 0 15px 0 0;
+        > a {
+          color: #2e5e59;
+        }
+      }
+      .cart {
+        font-size: 15px;
+        > a {
+          color: #2e5e59;
+        }
+      }
+    }
+    .hide-menu {
+      width: 100%;
+      height: 0;
+      background-color: white;
+      transition: 0.5s;
+      .list-item {
+        .item {
+          text-transform: uppercase;
+          padding: 14px 5px;
+          font-size: 13px;
+          border-bottom: 1px solid #e6e6e6;
+          display: flex;
+          align-items: flex-end;
+          > a {
+            width: 100%;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            .item-inner {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+    .active {
+      display: none;
+      height: 25vh;
+    }
+  }
+}
+@include breakpoint(991) {
+  .header {
+    &__menu {
+      &__left {
+        .list-item {
+          display: none;
+        }
+        .button-menu {
+          display: block;
+          cursor: pointer;
+          color: black;
+          padding: 10px;
+          .icon-menu {
+            text-align: center;
+            border: 2px solid #193633;
+            padding-top: 1px;
+            border-radius: 33px;
+            background-color: #b6b6b6;
+            width: 18px;
+            height: 18px;
+            font-size: 10px;
+          }
+          .icon-menu-hide {
+            display: none;
+            text-align: center;
+            border: 2px solid #193633;
+            border-radius: 33px;
+            background-color: #b6b6b6;
+            width: 18px;
+            height: 18px;
+            font-size: 11px;
+          }
+          .showing {
+            display: block;
+          }
+          .hiding {
+            display: none;
+          }
+        }
+      }
+      &__logo {
+        margin-right: 0;
+      }
+      .active {
+        display: block;
+        height: 25vh;
+      }
+    }
+  }
+}
+// @include min-breakpoint(1400) {
+//   .container {
+//     max-width: 1350px;
+//   }
+// }

@@ -1,0 +1,240 @@
+.footer {
+  padding: 80px 0;
+  &__title {
+    display: flex;
+    padding-bottom: 20px;
+    > div {
+      > img {
+        margin-top: 10px;
+        border-right: 1px solid #ddd;
+        padding-right: 18px;
+      }
+    }
+    > p {
+      padding-left: 20px;
+      line-height: 1.7;
+      letter-spacing: 0.7px;
+      font-size: 16px;
+    }
+    @include breakpoint(1400) {
+      > p {
+        padding-left: 50px;
+      }
+    }
+    @include breakpoint(1199) {
+      > p {
+        padding-left: 60px;
+      }
+    }
+    @include breakpoint(996) {
+      > p {
+        padding-left: 90px;
+      }
+    }
+  }
+  &__item {
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      > ul {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        > li {
+          padding: 5px;
+          padding-left: 0;
+          > a {
+            padding-left: 10px;
+            color: #666666;
+            font-size: 17px;
+            text-decoration: none;
+          }
+          > a:hover {
+            color: #2c2c2c;
+          }
+        }
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    padding-bottom: 10px;
+    &-icon {
+      padding-top: 5px;
+      font-size: 30px;
+      padding-right: 10px;
+      color: #313131;
+    }
+    &-inner {
+      > span {
+        color: #949494;
+        margin-top: 5px;
+        font-size: 16px;
+      }
+      > h3 {
+        color: #333333;
+        font-size: 17px;
+        padding-top: -10px;
+      }
+    }
+  }
+  &__you {
+    > p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #666666;
+    }
+    .your-email {
+      display: flex;
+      .icon {
+        font-size: 20px;
+        border: 1px solid;
+        margin-bottom: 6px;
+        padding: 3px 10px;
+      }
+      > div {
+        > input {
+          margin-left: -1px;
+          padding: 4px 5px;
+          width: 72%;
+          font-size: 1.7rem;
+          outline: rgb(221, 221, 221);
+        }
+        @include breakpoint(1199) {
+          > input {
+            width: 64%;
+          }
+        }
+        @include breakpoint(991) {
+          > input {
+            width: 40%;
+          }
+        }
+        @include breakpoint(759) {
+          > input {
+            width: 60%;
+          }
+        }
+        > a {
+          margin-top: -1px;
+          margin-left: -4px;
+          margin-bottom: 5px;
+          color: white;
+          padding: 2px 5px 1px 5px;
+          /* border-radius: 0; */
+          border-radius: 0;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          text-transform: capitalize;
+        }
+        > a:hover {
+          color: white;
+          background-color: #333333;
+        }
+      }
+    }
+  }
+  &__widget {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 4px;
+    &-like {
+      width: 100%;
+      display: flex;
+      margin-left: -5px;
+      margin-top: 15px;
+      justify-content: center;
+      .like-left {
+        display: flex;
+        padding: 5px 0;
+        overflow: hidden;
+        .icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #3b5998;
+          > a {
+            position: absolute;
+            display: flex;
+            top: -13px;
+            left: 9%;
+            flex-direction: column;
+            padding: 7px 13px;
+            font-size: 21px;
+            margin-left: -19px;
+            transition: 0.4s;
+            > svg {
+              margin-top: 20px;
+              color: white;
+            }
+          }
+          @include breakpoint(991) {
+            > a {
+              padding: 7px 13px;
+            }
+          }
+          @include breakpoint(759) {
+            > a {
+              left: 7%;
+            }
+          }
+          > a:hover {
+            top: -106%;
+          }
+        }
+        > a {
+          text-decoration: none;
+          margin-left: 10px;
+          line-height: 20px;
+          font-size: 14px;
+          color: #333333;
+          width: 75%;
+        }
+      }
+      .like-right {
+        display: flex;
+        // overflow: hidden;
+        padding: 5px 0;
+        overflow: hidden;
+        .icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #ee802f;
+          > a {
+            position: absolute;
+            display: flex;
+            top: -13px;
+            text-decoration: none;
+            left: 8%;
+            flex-direction: column;
+            padding: 7px 13px;
+            font-size: 21px;
+            margin-left: -19px;
+            transition: 0.4s;
+            > svg {
+              margin-top: 20px;
+              color: white;
+            }
+          }
+          @include breakpoint(759) {
+            > a {
+              left: 7%;
+            }
+          }
+          > a:hover {
+            top: -106%;
+          }
+        }
+        > a {
+          margin-left: 10px;
+          line-height: 20px;
+          text-decoration: none;
+          font-size: 14px;
+          color: #333333;
+          width: 75%;
+        }
+      }
+    }
+  }
+}

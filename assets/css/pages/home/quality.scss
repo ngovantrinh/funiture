@@ -1,0 +1,30 @@
+.quality {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #fdf3e7;
+  &__prominent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .feature-box {
+      padding: 15px 0;
+      .icon-box {
+        > svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .title-box {
+        .title {
+          padding: 25px 0 25px 0;
+          font-family: 'Zilla Slab', serif;
+          font-size: 25px;
+        }
+        .text {
+          line-height: 22px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

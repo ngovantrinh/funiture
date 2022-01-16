@@ -1,0 +1,80 @@
+.category {
+  text-align: center;
+  &__title {
+    font-family: 'Zilla Slab', serif;
+    padding: 30px 0 60px 0;
+    > h1 {
+      text-transform: capitalize;
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+    .btn {
+      font-size: 12px;
+      line-height: 20px;
+      border: 1px solid #444;
+      border-radius: initial;
+      padding: 7px 24px;
+      > svg {
+        margin-right: 5px;
+      }
+    }
+    .btn:hover {
+      background-color: #193532;
+      color: white;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    .wrap {
+      padding: 0 10px;
+      .links {
+        text-decoration: none;
+        .item {
+          margin-bottom: 20px;
+          position: relative;
+          height: 340px;
+          transition: 0.5s;
+          .item-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-transform: uppercase;
+            font-family: 'Zilla Slab', serif;
+            color: #444;
+            padding: 12px 22px;
+            background-color: white;
+            margin: 0;
+          }
+        }
+        .sofa {
+          background: url(../img/sofas.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .table {
+          background: url(../img/tables.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .chairs {
+          background: url(../img/chairs.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .lights {
+          background: url(../img/lights.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .wardrobes {
+          background: url(../img/wardrobes.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .beds {
+          background: url(../img/beds.jpg) no-repeat center center;
+          background-size: cover;
+        }
+        .item:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.discover {
+  display: flex;
+  flex-wrap: wrap;
+  .wrap {
+    padding: 0;
+  }
+  &__image {
+    background: url(../img/discover.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 50vh;
+  }
+  &__content {
+    padding: 48px;
+    .title {
+      font-family: 'Zilla Slab', serif;
+      > h1 {
+        font-size: 35px;
+        margin-bottom: 24px;
+        line-height: 42px;
+      }
+    }
+    .content {
+      > p {
+        font-size: 15px;
+        line-height: 25px;
+        padding-bottom: 25px;
+      }
+      .btn {
+        border: 1px solid rgb(206, 206, 206);
+        border-radius: 0;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 22px;
+        letter-spacing: 1px;
+      }
+      .btn:hover {
+        background-color: #193532;
+        color: white;
+      }
+    }
+  }
+}
